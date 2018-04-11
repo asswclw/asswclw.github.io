@@ -7,16 +7,16 @@
   
   <title>前后端知识体系杂记 | 鸡丝饭(gisfun)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结. #大纲  浏览器是什么 发送一个网络请求 服务器接收请求 服务器处理请求 服务器与前端数据交互 前端渲染数据 性能优化及其他   ##1. 浏览器是什么 ###1.1 浏览器多进程 ###1.">
+  <meta name="description" content="最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结. 大纲 浏览器是什么 发送一个网络请求 服务器接收请求 服务器处理请求 服务器与前端数据交互 前端渲染数据 性能优化及其他   1. 浏览器是什么1.1 浏览器多进程1.2 网络请求单线程2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前后端知识体系杂记">
 <meta property="og:url" content="http://yoursite.com/2018/04/11/前后端知识体系杂记/index.html">
 <meta property="og:site_name" content="鸡丝饭(gisfun)">
-<meta property="og:description" content="最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结. #大纲  浏览器是什么 发送一个网络请求 服务器接收请求 服务器处理请求 服务器与前端数据交互 前端渲染数据 性能优化及其他   ##1. 浏览器是什么 ###1.1 浏览器多进程 ###1.">
-<meta property="og:updated_time" content="2018-04-11T12:05:58.000Z">
+<meta property="og:description" content="最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结. 大纲 浏览器是什么 发送一个网络请求 服务器接收请求 服务器处理请求 服务器与前端数据交互 前端渲染数据 性能优化及其他   1. 浏览器是什么1.1 浏览器多进程1.2 网络请求单线程2.">
+<meta property="og:updated_time" content="2018-04-11T12:11:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前后端知识体系杂记">
-<meta name="twitter:description" content="最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结. #大纲  浏览器是什么 发送一个网络请求 服务器接收请求 服务器处理请求 服务器与前端数据交互 前端渲染数据 性能优化及其他   ##1. 浏览器是什么 ###1.1 浏览器多进程 ###1.">
+<meta name="twitter:description" content="最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结. 大纲 浏览器是什么 发送一个网络请求 服务器接收请求 服务器处理请求 服务器与前端数据交互 前端渲染数据 性能优化及其他   1. 浏览器是什么1.1 浏览器多进程1.2 网络请求单线程2.">
   
     <link rel="alternate" href="/atom.xml" title="鸡丝饭(gisfun)" type="application/atom+xml">
   
@@ -66,7 +66,7 @@
         <section id="main"><article id="post-前后端知识体系杂记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/11/前后端知识体系杂记/" class="article-date">
-  <time datetime="2018-04-11T12:05:58.000Z" itemprop="datePublished">2018-04-11</time>
+  <time datetime="2018-04-11T12:11:31.000Z" itemprop="datePublished">2018-04-11</time>
 </a>
     
   </div>
@@ -86,8 +86,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近看了几篇关于”在浏览器中输入url后到页面渲染到底发生了什么”的文章,也引起了我对于自己近两年接触的web开发的反思,觉得自己此前也是没有一个<br>完整的知识体系梳理,下面算是对目前我了解的知识做个简单总结.</p>
-<p>#<em>大纲</em></p>
-<ol>
+<h1 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a><em>大纲</em></h1><ol>
 <li>浏览器是什么</li>
 <li>发送一个网络请求</li>
 <li>服务器接收请求</li>
@@ -97,30 +96,7 @@
 <li>性能优化及其他</li>
 </ol>
 <hr>
-<p>##1. 浏览器是什么</p>
-<p>###1.1 浏览器多进程</p>
-<p>###1.2 网络请求单线程</p>
-<p>##2. 发送一个网络请求</p>
-<p>###2.1 url解析</p>
-<p>###2.2 请求流程</p>
-<p>##3. 服务器接收请求</p>
-<p>###3.1 服务器类型</p>
-<p>##4. 服务器处理请求</p>
-<p>###4.1 服务器物理架构</p>
-<p>###4.2 业务处理常规逻辑</p>
-<p>###4.3 RestFul</p>
-<p>##5. 服务器与前端数据交互</p>
-<p>###5.1 常规请求Header,body</p>
-<p>###5.2 cookie/session</p>
-<p>###5.3 跨域</p>
-<p>##6. 前端渲染数据</p>
-<p>###6.1 渲染概略逻辑</p>
-<p>###6.2 js引擎执行</p>
-<p>###6.3 CSS相关处理</p>
-<p>##7. 性能优化及其他</p>
-<p>###7.1 性能优化</p>
-<p>###7.2 工程化</p>
-
+<h2 id="1-浏览器是什么"><a href="#1-浏览器是什么" class="headerlink" title="1. 浏览器是什么"></a>1. 浏览器是什么</h2><h3 id="1-1-浏览器多进程"><a href="#1-1-浏览器多进程" class="headerlink" title="1.1 浏览器多进程"></a>1.1 浏览器多进程</h3><h3 id="1-2-网络请求单线程"><a href="#1-2-网络请求单线程" class="headerlink" title="1.2 网络请求单线程"></a>1.2 网络请求单线程</h3><h2 id="2-发送一个网络请求"><a href="#2-发送一个网络请求" class="headerlink" title="2. 发送一个网络请求"></a>2. 发送一个网络请求</h2><h3 id="2-1-url解析"><a href="#2-1-url解析" class="headerlink" title="2.1 url解析"></a>2.1 url解析</h3><h3 id="2-2-请求流程"><a href="#2-2-请求流程" class="headerlink" title="2.2 请求流程"></a>2.2 请求流程</h3><h2 id="3-服务器接收请求"><a href="#3-服务器接收请求" class="headerlink" title="3. 服务器接收请求"></a>3. 服务器接收请求</h2><h3 id="3-1-服务器类型"><a href="#3-1-服务器类型" class="headerlink" title="3.1 服务器类型"></a>3.1 服务器类型</h3><h2 id="4-服务器处理请求"><a href="#4-服务器处理请求" class="headerlink" title="4. 服务器处理请求"></a>4. 服务器处理请求</h2><h3 id="4-1-服务器物理架构"><a href="#4-1-服务器物理架构" class="headerlink" title="4.1 服务器物理架构"></a>4.1 服务器物理架构</h3><h3 id="4-2-业务处理常规逻辑"><a href="#4-2-业务处理常规逻辑" class="headerlink" title="4.2 业务处理常规逻辑"></a>4.2 业务处理常规逻辑</h3><h3 id="4-3-RestFul"><a href="#4-3-RestFul" class="headerlink" title="4.3 RestFul"></a>4.3 RestFul</h3><h2 id="5-服务器与前端数据交互"><a href="#5-服务器与前端数据交互" class="headerlink" title="5. 服务器与前端数据交互"></a>5. 服务器与前端数据交互</h2><h3 id="5-1-常规请求Header-body"><a href="#5-1-常规请求Header-body" class="headerlink" title="5.1 常规请求Header,body"></a>5.1 常规请求Header,body</h3><h3 id="5-2-cookie-session"><a href="#5-2-cookie-session" class="headerlink" title="5.2 cookie/session"></a>5.2 cookie/session</h3><h3 id="5-3-跨域"><a href="#5-3-跨域" class="headerlink" title="5.3 跨域"></a>5.3 跨域</h3><h2 id="6-前端渲染数据"><a href="#6-前端渲染数据" class="headerlink" title="6. 前端渲染数据"></a>6. 前端渲染数据</h2><h3 id="6-1-渲染概略逻辑"><a href="#6-1-渲染概略逻辑" class="headerlink" title="6.1 渲染概略逻辑"></a>6.1 渲染概略逻辑</h3><h3 id="6-2-js引擎执行"><a href="#6-2-js引擎执行" class="headerlink" title="6.2 js引擎执行"></a>6.2 js引擎执行</h3><h3 id="6-3-CSS相关处理"><a href="#6-3-CSS相关处理" class="headerlink" title="6.3 CSS相关处理"></a>6.3 CSS相关处理</h3><h2 id="7-性能优化及其他"><a href="#7-性能优化及其他" class="headerlink" title="7. 性能优化及其他"></a>7. 性能优化及其他</h2><h3 id="7-1-性能优化"><a href="#7-1-性能优化" class="headerlink" title="7.1 性能优化"></a>7.1 性能优化</h3><h3 id="7-2-工程化"><a href="#7-2-工程化" class="headerlink" title="7.2 工程化"></a>7.2 工程化</h3>
       
     </div>
     <footer class="article-footer">
